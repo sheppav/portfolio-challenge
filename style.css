@@ -1,0 +1,73 @@
+* {
+ font-family: sans-serif;
+}
+#aboutme{
+    background-color: #DBD3D8;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.intro {
+    background-color: #DDBEA9; 
+    text-align: center;
+    padding: 50px;
+
+}
+.game{
+    background-color: #DBD3D8 ;
+    padding: 100px 100px 100px 100px
+}
+
+.card{
+    width: 45%;
+    margin: 25px;
+}
+
+.paragraph {
+    width: 45%;
+    margin: 25px;
+}
+
+.contact {
+    background-color: #A5A58D ;  
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    padding: 50px 50px 50px 50px;
+ 
+}
+
+.list-group{
+    margin: 100px 10px 100px 100px;
+}
+.list-group-item {
+    background-color: #CB997E;
+}
+
+
+.name {
+    font-family: 'Satisfy', cursive;
+    font-size: larger;
+    text-align: center;
+    padding:  50px 50px 50px 50px;
+    background-color: #DBD3D8 ;
+
+}
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: xx-large;
+}
+.flex-row{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+

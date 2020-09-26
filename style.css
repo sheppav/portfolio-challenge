@@ -1,5 +1,6 @@
 * {
  font-family: sans-serif;
+ color: darkslategray;
 }
 #aboutme{
     background-color: #DBD3D8;
@@ -10,14 +11,8 @@
     flex-wrap: wrap; 
 }
 
-.intro {
-    background-color: #DDBEA9; 
-    text-align: center;
-    padding: 50px;
-
-}
 .game{
-    background-color: #DBD3D8 ;
+    background-color:  #CB997E   ;
     padding: 100px 100px 100px 100px
 }
 
@@ -42,9 +37,15 @@
  
 }
 
-.list-group{
-    margin: 100px 10px 100px 100px;
+.intro {
+    background-color: #DDBEA9; 
+    text-align: center;
+    padding: 50px;
 }
+.list-group{
+    margin: 100px 100px 100px 100px;
+}
+
 .list-group-item {
     background-color: #CB997E;
 }
@@ -68,6 +69,36 @@ h1 {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
 }
+.week2 {
+    background-color: #DBD3D8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+   
+}
+h2 {
+    font-size: large;
+    font-family: 'Courgette', cursive;
+} 
+
+.trelloimage{
+    width: 400px;
+    Padding: 50px 50px 50px 50px;
+    margin-left: 400px;
+   
+}
+.Trellolink {
+    text-align: center;
+    padding: 50px 50px 50px 50px;
+}
+
+.week2{
+    padding: 50px 50px 50px 50px
+}
+
+
+
 

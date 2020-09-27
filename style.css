@@ -1,5 +1,5 @@
 * {
- font-family: sans-serif;
+font-family:  sans-serif;
  color: darkslategray;
 }
 #aboutme{
@@ -42,13 +42,6 @@
     text-align: center;
     padding: 50px;
 }
-.list-group{
-    margin: 100px 100px 100px 100px;
-}
-
-.list-group-item {
-    background-color: #CB997E;
-}
 
 
 .name {
@@ -72,10 +65,12 @@ h1 {
 }
 .week2 {
     background-color: #DBD3D8;
-    text-align: center;
+    padding: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    text-align: center;
     
    
 }
@@ -99,6 +94,147 @@ h2 {
     padding: 50px 50px 50px 50px
 }
 
+.timelineheader {
+    background-color: #CB997E;
+    font-size: large;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+
+}
+
+main-timeline{
+    font-family: sans-serif;
+    position: relative;
+   
+}
+.container {
+    background-color: #CB997E ;
+}
+.main-timeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.main-timeline .timeline{
+    width: 50%;
+    font-size: large;
+    font-family: 'Courgette', cursive;
+    float: left;
+}
+.main-timeline .timeline-content{
+    background: #DBD3D8;
+    padding: 30px 85px 30px 30px;
+    margin: 0 10px 20px 0;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.main-timeline .timeline-content:hover{ text-decoration: none; }
+.main-timeline .timeline-content:before,
+.main-timeline .timeline-content:after{
+    content: '';
+    background-color: rgba(0,0,0,0.25);
+    border-radius: 0 40px;
+    position: absolute;
+    left: 0;
+    right: 55px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.main-timeline .timeline-content:after{
+    background-color: #CB997E;
+    box-shadow: -10px -10px 0 rgba(0,0,0,0.1) inset;
+    left: 10px;
+    top: 10px;
+}
+.main-timeline .timeline-year{
+    color: #A5A58D;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 25px;
+    transform: translateY(-50%) rotate(-90deg);
+    position: absolute;
+    right: -9px;
+    top: 50%;
+}
+.main-timeline .title{
+    color:  #DBD3D8;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+.main-timeline .description{
+    color: #555;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin: 0;
+}
+.main-timeline .timeline:nth-child(even){
+    float: right;
+    margin: 0 0 20px 10px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content{ padding: 30px 35px 30px 85px; }
+.main-timeline .timeline:nth-child(even) .timeline-content:before,
+.main-timeline .timeline:nth-child(even) .timeline-content:after{
+    left: 55px;
+    right: 0;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content:after{
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.1) inset;
+    top: 0;
+    bottom: 10px;
+    left: 55px;
+    right: 10px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-year{
+    right: auto;
+    left: -16px;
+}
+.main-timeline .timeline:nth-child(4n+2) .timeline-content{ background-color:  #DBD3D8; }
+.main-timeline .timeline:nth-child(4n+2) .title{ color:  #DBD3D8; }
+.main-timeline .timeline:nth-child(4n+3) .timeline-content{ background-color: #CB997E ; }
+.main-timeline .timeline:nth-child(4n+3) .title{ color: #7CBA01; }
+.main-timeline .timeline:nth-child(4n+4) .timeline-content{ background-color: #009BBA; }
+.main-timeline .timeline:nth-child(4n+4) .title{ color: #009BBA; }
+@media screen and (max-width:767px){
+    .main-timeline .timeline,
+    .main-timeline .timeline:nth-child(even){
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+@media screen and (max-width:576px){
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(even) .timeline-content{
+        text-align: center;
+        padding: 75px 30px 30px;
+    }
+    .main-timeline .timeline-content:before,
+    .main-timeline .timeline:nth-child(even) .timeline-content:before{
+        top: 50px;
+        right: 0;
+        left: 0;
+    }
+    .main-timeline .timeline-content:after,
+    .main-timeline .timeline:nth-child(even) .timeline-content:after{
+        box-shadow: -10px -10px 0 rgba(0,0,0,0.1) inset;
+        top: 60px;
+        right: 0;
+        left: 10px;
+        bottom: 0;
+    }
+    .main-timeline .timeline-year,
+    .main-timeline .timeline:nth-child(even) .timeline-year{
+        transform: translateX(-50%) translateY(0) rotate(0);
+        top: 12px;
+        right: auto;
+        left: 50%;
+    }
+    .main-timeline .title{ font-size: 20px; }
+}
 
 
 
